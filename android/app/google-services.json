@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "894956326784",
+    "project_id": "lab-assessment-b65b9",
+    "storage_bucket": "lab-assessment-b65b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894956326784:android:689d0f61639f54d174bb65",
+        "android_client_info": {
+          "package_name": "com.lab.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1IwZnDv-pus45p2WqnL4RgB5kYrsRQ14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894956326784:android:196382d29da43da974bb65",
+        "android_client_info": {
+          "package_name": "com.lab.lab_assessment_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1IwZnDv-pus45p2WqnL4RgB5kYrsRQ14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

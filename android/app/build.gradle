@@ -1,0 +1,50 @@
+plugins {
+    id "com.android.application"
+    // FlutterFire Configuration
+    id 'com.google.gms.google-services' // Firebase plugin
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.lab.lab_assessment_3"
+    compileSdk = flutter.compileSdkVersion // Use Flutter's compileSdk version
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.lab.lab_assessment_3" // Your unique Application ID
+        minSdk = 23 // Minimum SDK version compatible with Firebase
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Debug signing for release (update for production)
+            minifyEnabled false // Disable obfuscation for now
+            shrinkResources false // Disable resource shrinking for debugging
+        }
+    }
+}
+
+flutter {
+    source = "../.." // Path to the Flutter module
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-firestore:24.0.0' // Make sure Firestore dependency is present
+    implementation 'com.google.firebase:firebase-auth:21.0.1' // Firebase Auth if needed
+    implementation 'com.google.firebase:firebase-core:20.1.0' // Firebase core
+}
+
